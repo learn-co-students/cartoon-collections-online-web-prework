@@ -16,5 +16,7 @@ def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
   array.find do |item|
     item == cheese_types[0] || item == cheese_types[1] || item == cheese_types[2]
+    # I'm realizing now that I could have used
+    # `cheese_types.include?(item)`
   end
 end
