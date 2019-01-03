@@ -19,7 +19,7 @@ def find_the_cheese(food)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
   if food.include?(cheese_types) == true
-    return food.find {|word| cheese_types.include?(word)}
+    return food.find(cheese_types) {|word| return word}
   else
     return nil
   end
