@@ -1,9 +1,11 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+dwarf = ["doc", "Dopey", "Bashful", "Grumpy"]
+
+def roll_call_dwarves(dwarf)
+  dwarf.each_with_index do {|index, name| puts index name}.join
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+def summon_captain_planet(planeteer_calls)
+  planeteer_calls.collect {|word| word.capitalize << "!"}
 end
 
 def long_planeteer_calls# code an argument here
