@@ -1,7 +1,8 @@
 dwarf = ["doc", "Dopey", "Bashful", "Grumpy"]
 
 def roll_call_dwarves(dwarf)
-  dwarf.each_with_index do {|index, name| puts index name}.join
+  new_dwarf = dwarf.each_with_index {|name, index| puts "#{index+1} #{name}"}.join(" ")
+  puts new_dwarf
 end
 
 def summon_captain_planet(planeteer_calls)
