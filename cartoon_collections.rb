@@ -2,7 +2,6 @@ def roll_call_dwarves(array)
     array.each.with_index do |val, index| 
     puts "#{index + 1}. #{val}" 
   end
-  end
 end
 
 end
