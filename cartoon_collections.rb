@@ -4,17 +4,26 @@ def roll_call_dwarves(array)
   end
 end
 
+
+def summon_captain_planet(array)
+  capital_first_letter = []
+  
+  capital_first_letter = array.collect {|x| x.capitalize}
+  
+  exclimation_point = capital_first_letter.collect {|g| g + "!"}
+  
+  exclimation_point
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+
+def long_planeteer_calls(array)
+  array.any? {|x| x.length > 4}
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
-end
-
-def find_the_cheese# code an argument here
-  # the array below is here to help
+def find_the_cheese(array)
+  
   cheese_types = ["cheddar", "gouda", "camembert"]
+
+  array.find {|x| cheese_types.include?(x)}
+
 end
