@@ -15,14 +15,23 @@ def summon_captain_planet(veggies)
   veggies.each do |veggie|
     same_veggies << "#{veggie.capitalize}!"
   end
-  return same_veggies
+   same_veggies
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
+def long_planeteer_calls(calls_long)
+  
+     calls_long.any?  do |call|
+       call.length > 4
+     end
+      
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
-  cheese_types = ["cheddar", "gouda", "camembert"]
+def find_the_cheese(cheddar_cheese)
+   cheese_types = ["cheddar", "gouda", "camembert"]
+   
+   cheese_types.detect do |cheese|
+   cheddar_cheese.include?(cheese)
+    
+   end
+    
 end
