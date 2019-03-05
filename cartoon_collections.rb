@@ -18,13 +18,6 @@ end
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  if array include?(cheese_types)
-  else
-  end
-end
-
-def find_the_cheese(array)
-  cheese_types = ["cheddar", "gouda", "camembert"]
   array.find do |maybe_cheese|
     cheese_types.include?(maybe_cheese)
   end
