@@ -1,3 +1,4 @@
+require 'pry'
 def roll_call_dwarves(dwarves)
  
   dwarf_in_line =[]
@@ -14,6 +15,7 @@ def summon_captain_planet(veggies)
   
   veggies.each do |veggie|
     same_veggies << "#{veggie.capitalize}!"
+    
   end
    same_veggies
 end
@@ -22,6 +24,7 @@ def long_planeteer_calls(calls_long)
   
      calls_long.any?  do |call|
        call.length > 4
+       
      end
       
 end
@@ -29,7 +32,7 @@ end
 def find_the_cheese(cheddar_cheese)
    cheese_types = ["cheddar", "gouda", "camembert"]
    
-   cheese_types.detect do |cheese|
+   cheese_types.find do |cheese|
    cheddar_cheese.include?(cheese)
     
    end
