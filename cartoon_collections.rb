@@ -1,16 +1,21 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+def roll_call_dwarves 
+    dwarves = ["Dopey", "Grumpy", "Bashful"]
+    print dwarves
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+def summon_captain_planet
+  veggies = ["carrot", "cucumber", "pepper"]
+  result =  ["carrot", "cucumber", "pepper"]
+  puts 'veggies'.split.map(&:capitalize).join(!)
+
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
+def summon_captain_planet
+veggies = ["carrot", "cucumber", "pepper"]
+result = veggies
+
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
+def 
   cheese_types = ["cheddar", "gouda", "camembert"]
 end
